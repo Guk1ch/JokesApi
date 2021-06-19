@@ -15,6 +15,7 @@ namespace Api_Joke
         {
            
             var category = "knock-knock";
+            // other categories: job, animal, blonde, 
             var lang = "en";
             var url = $"https://api.jokes.one/jod?category={category}&language={lang}&";
 

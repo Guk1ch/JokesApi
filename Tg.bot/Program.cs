@@ -18,7 +18,7 @@ using Telegram.Bot;
             bot.OnMessage += (s, arg) =>
             {
                 Console.WriteLine($"{arg.Message.Chat.FirstName}: {arg.Message.Text}");
-                bot.SendTextMessageAsync(arg.Message.Chat.Id, $"You say: {arg.Message.Text}");
+                bot.SendTextMessageAsync(arg.Message.Chat.Id, $"Ты говоришь: {arg.Message.Text}");
             };
 
             bot.StartReceiving();
